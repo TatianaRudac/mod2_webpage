@@ -1,16 +1,21 @@
+* {
+    box-sizing: border-box;
+}
 
-
-.h1 {
+body {
 	text-align: center;
+	font-family: verdana, sans-serif;
+	margin: 0;
 }
 
 .boxTitle {
 	float: right;
-	border: 2px solid black;
+	border: 1px solid black;
 	padding: .5rem 3rem;
-	margin-top: -2px;
-	margin-right: -2px;
-
+	margin-top: -1px;
+	margin-right: -1px;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
 }
 
 .title1 {
@@ -19,6 +24,7 @@
 
 .title2 {
 	background: red;
+	color: white;
 }
 
 .title3 {
@@ -27,46 +33,50 @@
 
 .box {
 	background-color: grey;
-	border: 2px solid black;
-
+	border: 1px solid black;
 }
 
 .text {
-	padding: 1rem;
+	padding: 1.5rem;
 	margin-top: 1.5rem;
+	text-align: left;
 }
 
 .row {
 	width: 100%;
-	background-color: green;
+	padding-top: 30px;
 }
 
 @media (min-width: 992px) {
- .col-lg-1, .col-lg-2, .col-lg-3 {
+	.col-lg-4 {
 		float: left;
-		border: 1px solid grey;
-}
-.col-lg-1 {
-	width: 33%;
-}
-.col-lg-2 {
-	width: 66.66%;
-}
-.col-lg-3 {
-	width: 100%;
- }
+		width: 33.3333333333333%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
- .col-md-1, .col-md-2, .col-md-3 {
- 	float: left;
- 	border: 1px solid grey;
- }
- .col-md-1 {
- 	width: 50%;
- }
-.col-md-2 {
-	width: 50%;
- }
+	.col-md-6, .col-md-12 {
+		float: left;
+		padding: 0 10px;
+	}
+	.col-md-6 {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-xs-12 {
+		float: left;
+		width: 100%;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
